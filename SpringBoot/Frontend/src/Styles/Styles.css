@@ -1,0 +1,100 @@
+/* Center the form using flexbox */
+.todo-form {
+  background-color: #23cc23; /* Light gray background */
+  width: 100%; /* Full width for responsive design */
+  max-width: 400px; /* Max width for medium-sized form */
+  height: auto; /* Let the height adjust based on content */
+  padding: 1.5rem; /* Internal spacing */
+  border-radius: 0.5rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 10px; 
+}
+
+/* Container for centering form vertically and horizontally */
+.container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 4%; /* Push the form a bit down from the top */
+  width: 100%; /* Ensure it spans the full width */
+}
+
+.table-container {
+  margin-top: 2%; /* Adjust this value as needed */
+}
+
+.button-gap {
+  margin-right: px; /* Adjust the gap as needed */
+}
+
+.button-gap-left {
+  margin-left: 8px; /* Adjust the gap as needed */
+}
+
+
+/* Style for the input and textarea */
+.todo-form input,
+.todo-form textarea {
+  border: 1px solid #d1d5db; /* Light border */
+  border-radius: 1rem; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Internal spacing */
+  width: 100%; /* Full width inside padding */
+  margin-bottom: 1rem; /* Space below input */
+  font-size: 1rem; /* Readable text size */
+}
+
+/* Style for the button */
+.todo-form button {
+  background-color: #3b82f6; /* Blue background */
+  color: #fff; /* White text */
+  padding: 0.5rem 1.5rem; /* Internal spacing */
+  border-radius: 0.375rem; /* Rounded corners */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 1rem; /* Readable text size */
+  transition: background-color 0.3s; /* Smooth hover effect */
+  width: 100%; /* Full width button */
+}
+
+/* Hover effect for the button */
+.todo-form button:hover {
+  background-color: #253ceb; /* Darker blue on hover */
+}
+
+.delete-button:hover {
+  background-color: #e31f1f; /* Equivalent to hover:bg-red-700 */
+}
+
+.custom-switch {
+  border-radius: 10px; /* Optional: makes the switch rounded */
+  padding: -px; /* Adds spacing inside the border */
+  display: inline-block; /* Ensures proper rendering */
+}
+
+.todo-list-container {
+  border: 2px solid #141212;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  padding: 10px;
+  width: 300px; /* Decrease width to control container size */
+  background-color: #f8f9fa;
+}
+
+/* Media query for smaller screens (mobile) */
+@media (max-width: 576px) {
+  .todo-form {
+    width: 100%; /* Full width on smaller screens */
+    padding: 1rem; /* Slightly reduced padding for mobile */
+  }
+
+  .todo-form input,
+  .todo-form textarea {
+    font-size: 0.9rem; /* Smaller text on smaller screens */
+  }
+
+  .todo-form button {
+    padding: 0.5rem 1rem; /* Adjust button padding for mobile */
+  }
+}
